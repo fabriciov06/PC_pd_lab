@@ -1,4 +1,8 @@
 package observer;
 
-public class InventoryObserver {
+public class InventoryObserver implements OrderObserver{
+    @Override
+    public void update(String message) {
+        System.out.println("Actualizando inventario...");
+    }
 }
